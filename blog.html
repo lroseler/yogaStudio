@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></link>
+    <style>
+        h1{
+            text-align: center
+        }
+        body{
+            color: #266e74;
+            font-family: Lato, Helvetica, Arial, sans-serif;
+
+        }
+        span{
+            border-bottom: solid #266e74;
+        }
+    </style>
+    <title>
+            Blog and News for Our Yoga Studio
+    </title>
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-right navbar-dark bg-dark" style="margin-bottom: 15%">
+                <a class="navbar-brand" href="#"><img src="lotus.jpg" class="img-fluid" style="height: 6em; width:8em"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item ">
+                          <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="blog.html">Blog & News </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="calendar.html">Calendar </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+    <h1 style="margin-top: 15%; margin-bottom: 5%">Bl<span>og and News for Our Yoga Stud</span>io</h1>
+    
+    <div class="row">
+      <div class="col-md-6 col-sm-12" style="  padding-left: 8%">
+        <h3>Customer Reviews</h3>
+        <div class="card" style="width: 24rem;">
+            <div class="card-body">
+              <h5 class="card-title">First Customer Review</h5>
+              <h6 class="card-subtitle mb-2 ">From avid Yogi</h6>
+              <h6 class="card-subtitle mb-2 text-muted"><p id="date"></p></h6>
+              <p class="card-text">Love practicing yoga here! </p>
+            </div>
+          </div>
+          <div class="card" style="width: 24rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Second Customer Review</h5>
+                  <h6 class="card-subtitle mb-2 ">From medicore Yogi</h6>
+                  <h6 class="card-subtitle mb-2 text-muted"><p id="oldD"></p></h6>
+                  <p class="card-text">Found my zen here! </p>
+                </div>
+            </div>
+        </div>
+      <div class="col-md-6 col-sm-12" style="  padding-left: 8%">
+      <h3>News</h3>
+      <div class="card" style="width: 24rem;">
+            <div class="card-body">
+              <h5 class="card-title">New News </h5>
+              <h6 class="card-subtitle mb-2 text-muted"><p id="otherD"></p></h6>
+              <p class="card-text">Finally got some new mats!</p>
+            </div>
+          </div>
+          <div class="card" style="width: 24rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Old News </h5>
+                  <h6 class="card-subtitle mb-2 text-muted"><p id="futureD"></p></h6>
+                  <p class="card-text">Our mats kinda smell like feet!</p>
+                </div>
+              </div>
+      </div>
+    </div>  
+    <script>
+            var d = new Date();
+            document.getElementById("date").innerHTML = d;
+            var oldD = d.setDate(5);
+            document.getElementById("oldD").innerHTML = d;
+            var otherD = d.setDate(5);
+            document.getElementById("otherD").innerHTML = d;
+            var futureD = d.setDate(4);
+            document.getElementById("futureD").innerHTML = d;
+
+        </script>
+    <script src="moment.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+
+</body>
+
+</html>

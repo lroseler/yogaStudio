@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-datepicker3.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></link>
+    <style>
+       
+        span{
+            border-bottom: solid #266e74;
+        }
+        ul {list-style-type: none;}
+body {
+    text-align: center;
+    color: #266e74;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+
+    }
+
+.month {
+  padding: 2em;
+  width: 100%;
+  background: #266e74;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: medium;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:#ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:medium;
+  color: #777;
+  padding: 2em;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #266e74;
+  color: white !important
+}
+    </style>
+    <title>Yoga Calendar</title>
+    <script>
+    
+    </script>
+    </head>
+    <body>
+            <nav class="navbar navbar-expand-lg fixed-top navbar-right navbar-dark bg-dark" style="margin-bottom: 15%">
+                    <a class="navbar-brand" href="#"><img src="lotus.jpg" class="img-fluid" style="height: 6em; width:8em"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item ">
+                              <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">Blog & News </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="calendar.html">Calendar </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+    <h1 style="margin-top: 15%; margin-bottom: 5%">Cal<span>endar for Our Yoga Stud</span>io</h1>
+    <div id="calendar" style="padding:1em; margin-bottom: 10%">
+            <div class="month"> 
+                    <ul>
+                      <li class="prev">&#10094;</li>
+                      <li class="next">&#10095;</li>
+                      <li>May<br><span style="font-size:18px">2019</span></li>
+                    </ul>
+                  </div>
+                  
+                  <ul class="weekdays">
+                    <li>Sunday<br/>No Classes</li>
+                    <li>Monday<br/> 11am-12:30</li>
+                    <li>Tuesday<br/> 12:30-1pm</li>
+                    <li>Wenesday<br/> 11am-12:30</li>
+                    <li>Thursday<br/> 12:30-1pm</li>
+                    <li>Friday<br/> 11am-12:30</li>
+                    <li>Saturday<br/>No Classes</li>
+                    
+                  </ul>
+                  
+                  <ul class="days"> 
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                    <li>31</li>
+                  </ul>
+    </div>
+
+    
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="bootstrap-datepicker.js"></script>
+    </body>
+
+    </html>
